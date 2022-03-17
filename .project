@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/cards_desc.txt</name>
+			<type>1</type>
+			<location>C:/Users/liter/OneDrive/Escritorio/Universidad/Semestre V/Algoritmos y Estructuras de Datos/Laboratorio 6/Algoritmos-y-Estructuras-HT6/src/cards_desc.txt</location>
+		</link>
+	</linkedResources>
 </projectDescription>

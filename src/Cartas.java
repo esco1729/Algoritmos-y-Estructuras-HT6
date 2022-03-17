@@ -1,39 +1,54 @@
+/**
+ * 
+ * @author liter
+ *
+ */
+public class Cartas{
+    
+    private String nombre;
+    private String tipo;
+    private int cantidad;
+    /**
+     * 
+     * @param nombre
+     * @param tipo
+     * @param cantidad
+     */
+    public Cartas(String nombre, String tipo, int cantidad){
+        this.nombre = nombre;
+        this.tipo = tipo;
+        this.cantidad = cantidad;
+    }
+    /**
+     * Obtener nombre
+     * @return
+     */
+    public String getNombre() {
+        return nombre;
+    }
 
-public class Cartas {
-	private String tipoCarta;
-	private String nombre;
-	private int cant;
-	
-	
-	public Cartas(String tipoCarta, String nombre, int cant) {
-		this.tipoCarta = tipoCarta;
-		this.nombre = nombre;
-		this.cant = cant;
-	}
-	
-	public Cartas(String tipo) {
-		tipoCarta = tipo;
-		cant = 1;
-	}
-	
-	public String getNombre() {
-		return nombre;
-	}
-	
-	
-	
-	public void agregar() {
-		cant++;
-	}
-	
-	public int getCant() {
-		return cant;
-	}
-	
-	public String toString() {
-		return "Nombre: " + this.nombre + "\n Tipo: " + this.tipoCarta;
-	}
+    public void setNombre(String cardName) {
+        this.nombre = cardName;
+    }
+    /**
+     * Obtener tipo
+     * @return
+     */
+    public String getTipo() {
+        return this.tipo;
+    }
 
-	
-	
+    public void setTipo(String cardType) {
+        this.tipo = cardType;
+    }
+
+    /**
+     * 
+     */
+    public String toString(){
+        return " Card Name: " + this.nombre +
+                " Card Type: " + this.tipo;
+    }
+
 }
+
