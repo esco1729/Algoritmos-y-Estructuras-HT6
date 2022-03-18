@@ -106,7 +106,7 @@ public class Main {
 
     }
     /**
-     * Leer el archivo
+     * Leer el archivo relativo
      * @param map
      * @return
      */
