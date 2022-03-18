@@ -158,8 +158,8 @@ public class Main {
         return "\nMenú principal\n" +
                 "1. Agregar carta a colección del usuario\n" +
                 "2. Mostrar tipo de una carta especifica\n" +
-                "3. Mostrar el nombre, tipo y cantidad de cada carta\n" +
-                "4. Mostrar el nombre, tipo y cantidad de cada carta ordenadas por tipo\n" +
+                "3. Mostrar el nombre, tipo y cantidad de cada carta en mi colección\n" +
+                "4. Mostrar el nombre, tipo y cantidad de cada carta ordenadas por tipo en mi colección\n" +
                 "5. Mostrar nombre y tipo de cartas existentes\n" +
                 "6. Mostrar nombre y tipo de cartas existentes ordenadas por tipo\n" +
                 "7. Salir\n";

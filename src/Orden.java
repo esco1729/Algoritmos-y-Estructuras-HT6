@@ -39,7 +39,7 @@ public class Orden {
     public static String mostrarTipo(Map<Integer, Cartas> map, String nombre){
         for (Map.Entry<Integer, Cartas> entry : map.entrySet()){
             if (entry.getValue().getNombre().equals(nombre)){
-                return "\nTipo de carta: " + entry.getValue().getNombre();
+                return "\nTipo de carta: " + entry.getValue().getTipo();
             }
         }
         return "\nLa carta ingresada es inválida";
@@ -66,17 +66,36 @@ public class Orden {
         String monstruos = "\nTIPO MONSTRUO\n";
         String hechizos = "\nTIPO HECHIZO\n";
         String trampas = "\nTIPO TRAMPA\n";
+        int monstruo = 0;
+        int hechizo = 0;
+        int trampa = 0;
         for (Map.Entry<Integer, Cartas> entry : mapa2.entrySet()) {
+            if(entry.getValue().getTipo().equals("Monstruo")){
+            	monstruo ++;
+            }
+            else if (entry.getValue().getTipo().equals("Hechizo")) {
+            	hechizo++;
+            }
+            
+            else {
+            	trampa ++;
+            }
+        	
             if (entry.getValue().getTipo().equals("Monstruo")){
-                monstruos += "Nombre: " + entry.getValue().getTipo() + "\n";
+                monstruos += "Nombre: " + entry.getValue().getNombre() + " Tipo: " + entry.getValue().getTipo() + "\n";
             } 
             else if (entry.getValue().getTipo().equals("Hechizo")){
-                hechizos += "Nombre: " + entry.getValue().getNombre() + "\n";
+                hechizos += "Nombre: " + entry.getValue().getNombre() + " Tipo: " + entry.getValue().getTipo() + "\n";
             } 
             else if (entry.getValue().getTipo().equals("Trampa")){
-                trampas += "Nombre: " + entry.getValue().getNombre() + "\n";
+                trampas += "Nombre: " + entry.getValue().getNombre() + " Tipo: " + entry.getValue().getTipo() + "\n";
             }
+            
+            
+            
         }
-        return monstruos + hechizos + trampas;
+        return monstruos + hechizos + trampas + "\nCantidad de monstruos: " + Integer.toString(monstruo)
+        + "\nCantidad de hechizos: " + Integer.toString(hechizo) + "\nCantidad de trampas: " + Integer.toString(trampa);
     }
+    
 }

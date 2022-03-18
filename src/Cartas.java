@@ -41,7 +41,10 @@ public class Cartas{
     public void setTipo(String cardType) {
         this.tipo = cardType;
     }
-
+    
+    public int getCant() {
+    	return this.cantidad;
+    }
     /**
      * 
      */
